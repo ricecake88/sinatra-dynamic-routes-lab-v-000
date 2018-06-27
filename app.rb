@@ -17,6 +17,7 @@ class App < Sinatra::Base
     num.times do 
       string += phrase
     end
+    string
   end
   
 end
