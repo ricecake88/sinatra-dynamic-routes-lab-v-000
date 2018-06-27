@@ -14,8 +14,8 @@ class App < Sinatra::Base
   get '/say/:number/:phrase' do
     phrase = params[:phrase]
     num = params[:number].to_i
-    if num > 0
-      "Hello"
+    5.times do
+      "hello"
     end
 
   end
