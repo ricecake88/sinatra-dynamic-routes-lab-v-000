@@ -29,11 +29,19 @@ class App < Sinatra::Base
     num1 = params[:number1].to_i
     num2 = params[:number2].to_i
     op = params[:operation]
-    case add
-    when
+    case op
+    when 'add'
       result = num1 + num2
       result.to_s
-    elsif op == "subtract"
+    when 'subtract'
+      result = num1 - num2
+      result.to_s
+    when 'multiply'
+      result = num1 * num2
+      result.to_s
+    when 'divide'
+      result = num1 / num2
+      result.to_s
     end
   end
 end
