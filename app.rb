@@ -15,6 +15,9 @@ class App < Sinatra::Base
     phrase = params[:phrase]
     num = params[:number].to_i
     "#{num}"
+    num.times do
+      "Hello"
+    end
     #    num.times do
 #      "#{phrase}"
 #    end
